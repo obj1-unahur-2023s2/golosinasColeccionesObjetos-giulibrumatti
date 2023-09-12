@@ -33,6 +33,24 @@ object mariano {
 	
 	method golosinaMasCara() = golosinas.max({g => g.precio()})
 	
+	method gustosFaltantes(gustosDeseados) = gustosDeseados.asSet().difference(self.sabores())
+	
+	method buscarGolosinas(closure) = golosinas.filter(closure)
+	
+	/*
+	 * (1..5) 1 hasta 5
+	 * (1..5).forEach({ i => console.println(i)})
+	 * const lista = []
+	 * (1..5).forEach({ i => lista.add(1.randomUpTo(101).truncate(0)) })
+	 * se genero una lita aleatoria
+	 * (1..lista.size() - 1).all( i => lista.get(i - 1) <= lista.get(i)}) 
+	 * te indica si la lista esta ordenada
+	 * 
+	 * lista.sortBy({a,b => a <= b}) para ordenar una lista
+	 * 
+	 * 
+	 */
+	
 	
 		
 	

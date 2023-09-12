@@ -1,6 +1,11 @@
+describe "Testing gustos faltantes" {
 
-test "testX" {
+	test "gustos faltantes"{
+		
+		const todosLosSabores = #{"vainilla", "frutilla", "limon"}
+		
 
-	assert.that(true)
+	}	
 
 }
+
